@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import '../Styles/MainHeader.css';
-import '../Styles/Page.css';
+import '~/styles/MainHeader.css';
+import '~/styles/Page.css';
 import SearchBar from "./SearchBar";
 
 const MainHeader = ({ input, setInput, handleSubmit, subject }) => {
@@ -10,14 +9,14 @@ const MainHeader = ({ input, setInput, handleSubmit, subject }) => {
 
     return (
         <div id="page">
-            <header id="masthead" class="site-header" role="banner">
-                <div class="site-branding">
-                    <p class="site-title">
-                        <Link to="/">
+            <header id="masthead" className="site-header" role="banner">
+                <div className="site-branding">
+                    <p className="site-title">
+                        <a href="/">
                             <span>CAD</span> 
                             Library
                             {/* <img src="cadLibrary.png"></img> */}
-                        </Link>
+                        </a>
                     </p>    
                 </div>
 

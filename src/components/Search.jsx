@@ -1,5 +1,5 @@
 import React, {useState, createContext, useEffect} from 'react';
-import '../Styles/SearchBar.css';
+import '~/styles/SearchBar.css';
 import axios from 'axios';
 import ObjectCard from './ObjectCard';
 
@@ -126,7 +126,7 @@ const Search = (props) => {
                     <button type="submit" onClick={searchByTerm}>Search</button>
                 </div>
             </div>
-            <div class="cards" id="page">
+            <div className="cards" id="page">
             {searchObjects.map((object, i) => (
                 <ObjectCard objImageUrl={object.imgUrl} objTitle={object.title} objAuthor={object.author} objDescription={object.desc} doi={object.doi} key={i} />
             ))}

@@ -1,5 +1,5 @@
 import React, {useState, createContext, useEffect} from 'react';
-import '../Styles/SearchBar.css';
+import '~/styles/SearchBar.css';
 import axios from 'axios';
 
 const SearchBar = ({ input, setInput, handleSubmit, subject }) => {

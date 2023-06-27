@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from "react";
-import "../Styles/Object.css";
+import "~/styles/Object.css";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import MainHeader from './MainHeader';
 import CategoryHeader from './CategoryHeader';
-import '../Styles/Page.css';
+import '~/styles/Page.css';
 
 
 const Object = () => {
@@ -116,7 +116,7 @@ const Object = () => {
     return (
         <div>
             <body>
-                <div class="site">
+                <div className="site">
                     <MainHeader subject="home"></MainHeader>
                     <CategoryHeader></CategoryHeader>
                     <div id="page">
@@ -137,11 +137,11 @@ const Object = () => {
                             <div id="box">
                                 <b>Developer</b>
                                 <br></br>
-                                <p class="detail"><a href={developerLink} target="_blank">{developerName}</a></p>
+                                <p className="detail"><a href={developerLink} target="_blank">{developerName}</a></p>
                                 
                                 <b>Subject</b>
                                 <br></br>
-                                <p class="detail">Subject(s)</p>
+                                <p className="detail">Subject(s)</p>
                               
                                 <b>Grade Levels</b>
                                 <p></p>
@@ -156,7 +156,7 @@ const Object = () => {
                                     </li>
                                 </ul>
 
-                                <p class="detail">Discuss</p>
+                                <p className="detail">Discuss</p>
                             </div>
                         </div>
                         

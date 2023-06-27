@@ -9,7 +9,7 @@ const SearchResultDisplay = ({ searchObjects }) => {
         <div>
             <div id="page">
                 {noResults ? <p>No results found</p> : <p>{searchObjects.length} results</p>}
-                <div class="cards">
+                <div className="cards">
                     {searchObjects.map((object, i) => (
                         <ObjectCard objImageUrl={object.imgUrl} objTitle={object.title} objAuthor={object.author} objDescription={object.desc} doi={object.doi} key={i} />
                     ))}
